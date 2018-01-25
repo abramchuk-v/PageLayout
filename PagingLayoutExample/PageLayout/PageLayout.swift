@@ -24,16 +24,18 @@ public class PageLayout: UICollectionViewFlowLayout {
             if attribute.representedElementCategory != .cell {
                 continue
             }
-            if((velocity.x > 0.0 && attribute.center.x > firstAttribute.center.x) ||
-                (velocity.x <= 0.0 && attribute.center.x < firstAttribute.center.x)) {
+            if((velocity.x >= 0.0 && attribute.center.x > firstAttribute.center.x)) {
                 firstAttribute = attribute;
+            }else if ((velocity.x <= 0.0 && attribute.center.x > firstAttribute.center.x)) {
+                break
             }
+            
         }
         
         if layoutAttributes.count == 1 {
             if velocity.x > 0 {
                 return CGPoint(x: firstAttribute.center.x + collectionView!.bounds.size.width * 0.5, y: proposedContentOffset.y)
-            } else if (velocity.x < -0) {
+            } else if (velocity.x < 0) {
                 return CGPoint(x: firstAttribute.center.x - 1.5 * collectionView!.bounds.size.width , y: proposedContentOffset.y)
             }
         }
