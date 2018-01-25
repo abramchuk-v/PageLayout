@@ -1,5 +1,4 @@
-## PageLayout [![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://developer.apple.com/swift/) [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/RSKCollectionViewRetractableFirstItemLayout.svg)]
-
+## PageLayout [![Swift 4.0](https://img.shields.io/badge/Swift-4.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/26678744/35388540-480f0dd4-01e5-11e8-937d-d6cd4b4b69c9.gif" alt="Sample">
 </p>
@@ -24,7 +23,7 @@ Have fun.
 
 ## Contact
 
-Ruslan Skorb
+Abramchuk Vladislav
 
 - http://github.com/abramchuk-v
 
